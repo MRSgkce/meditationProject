@@ -1,0 +1,234 @@
+/* Genel stiller */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: transparent; /* Arka planı şeffaf yap */
+    padding: 10px 0; /* Header iç boşluğunu azalt */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('back2.png'); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Arka plan resminin tekrarlanmasını engelle */
+}
+
+header {
+    height: 100px; /* Header yüksekliği */
+}
+
+.hero {
+    text-align: center;
+    padding: 1px 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Arka plan resminin tekrarlanmasını engelle */
+    height: 100%; /* Sayfa yüksekliği kadar arka plan resmi */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: transparent; /* Arka planı şeffaf yap */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Diğer stillerden sonra eklenen stiller */
+
+.big-btn {
+    display: inline-block;
+    background-color: #6F52ED; /* Eflatun rengi */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px; /* Yuvarlak köşeler */
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Butonlar arasındaki boşluk */
+    vertical-align: middle; /* Dikey hizalamayı ayarla */
+}
+
+.big-btn:hover {
+    background-color: #573BCB; /* Hover efekti */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Menüyü sağa hizala */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle; /* Dikey hizalamayı ayarla */
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Yatay hizalamayı ayarla */
+    vertical-align: middle; /* Dikey hizalamayı ayarla */
+    font-size: 33px; /* Yazı boyutunu küçült */
+}
+
+.image-container,
+.image-container-right {
+    flex: 0 0 auto;
+    margin: 0 5px; /* Resimler arasındaki boşluğu azalt */
+}
+
+.image-container img,
+.image-container-right img {
+    width: 200px; /* Resim genişliği */
+    height: auto; /* Otomatik yükseklik */
+}
+
+
+
+
+
+
+/* Diğer stillerden sonra eklenen stiller */
+
+header {
+    display: flex;
+    justify-content: space-between; /* Başlık ve menüyü yatay olarak hizala */
+    align-items: center; /* Dikey hizalamayı ayarla */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Menüyü sağa hizala */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Yazı boyutunu küçült */
+}
+
+
+/* Diğer stillerden sonra eklenen stiller */
+
+.logo {
+    display: flex;
+    align-items: center; /* Dikey hizalamayı ayarla */
+}
+
+.logo img {
+    height: 40px; /* Logo yüksekliği */
+    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
+    margin-left: 45px; /* Resmin soluna boşluk ekle */
+}
+
+.site-name {
+    font-size: 24px; /* Başlık yazı boyutu */
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.left-image {
+    float: left; /* Sol tarafa yasla */
+    margin-right: 20px; /* Sağa doğru 20 piksel boşluk bırak */
+}
+
+.left-image img {
+    width: 500px; /* Fotoğraf genişliği */
+    height: auto; /* Otomatik yükseklik ayarı */
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between; /* İçeriği sağa ve sola hizala */
+    align-items: center; /* Dikeyde hizala */
+}.image-container,
+.image-container-right {
+    flex: 0 0 auto;
+    margin-left: 5.5rem; /* Sağa doğru boşluk */
+    margin-top: 0; /* Yukarı doğru boşluk */
+}
+
+.image-container img,
+.image-container-right img {
+    width: 550px; /* Resim genişliği */
+    height: auto; /* Otomatik yükseklik */
+    margin-right: 0.000005rem; /* Sağa doğru boşluk */
+    margin-left: 0.000000005rem;
+    margin-top: 0; /* Yukarı doğru boşluk */
+}
